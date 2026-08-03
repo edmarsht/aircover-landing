@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AirCover Manager — Ne ratez plus jamais vos AirCover</title>
 <meta name="description" content="AirCover Manager vous aide à suivre vos demandes AirCover et vous alerte au bon moment après le départ d'un voyageur, avant la fin des 14 jours.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23FF385C'/%3E%3Ctext x='32' y='42' font-family='-apple-system,Helvetica,Arial,sans-serif' font-size='24' font-weight='700' fill='%23fff' text-anchor='middle'%3EAC%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23FF385C'/%3E%3Ctext x='32' y='39' font-family='-apple-system,Helvetica,Arial,sans-serif' font-size='20' font-weight='700' fill='%23fff' text-anchor='middle'%3EAC%3C/text%3E%3C/svg%3E">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AirCover Manager">
@@ -58,16 +58,6 @@
           vous alerte le jour où il faut agir.
         </p>
 
-        <div class="callout hero__insight">
-          <p>
-            Le voyageur a lui aussi 14 jours pour laisser son avis. S'il voit arriver votre demande
-            d'argent avant, il peut se venger avec un mauvais avis, ce qui est problématique pour
-            un hôte. Bonne nouvelle : la possibilité de noter se ferme en début d'après midi le
-            14ᵉ jour, alors que vous pouvez encore agir jusqu'à minuit. C'est cette fenêtre précise
-            qu'AirCover Manager ne vous laisse plus rater.
-          </p>
-        </div>
-
         <div class="hero__cta">
           <a href="https://edmarsht.github.io/aircover-manager/signup.html" class="btn btn--primary btn--lg">Créer un compte</a>
           <a href="#comment-ca-marche" class="btn btn--ghost btn--lg">Voir comment ça marche</a>
@@ -82,39 +72,42 @@
           </div>
           <div class="mock__stats">
             <div class="mock__stat">
-              <strong>3</strong>
-              <span>En attente</span>
+              <strong>780,00 €</strong>
+              <span>À demander (4)</span>
             </div>
             <div class="mock__stat">
-              <strong>804,99 €</strong>
-              <span>Montant en attente</span>
+              <strong>320,00 €</strong>
+              <span>Chez Airbnb (1)</span>
             </div>
             <div class="mock__stat mock__stat--accent">
-              <strong>1 240,00 €</strong>
+              <strong>1 450,00 €</strong>
               <span>Perçu</span>
             </div>
           </div>
           <div class="mock__list">
             <div class="mock__item">
               <div>
-                <strong>Robinet cassé + crasse</strong>
-                <span class="mock__badge">Dans 1 j</span>
+                <strong>Dégât des eaux salle de bain</strong>
+                <span class="mock__badge mock__badge--waiting">En attente</span>
+                <div class="mock__meta">🏠 Le Marais · ✅ Rappel envoyé</div>
               </div>
-              <span class="mock__amount">350,00 €</span>
+              <span class="mock__amount">640,00 €</span>
             </div>
             <div class="mock__item mock__item--today">
               <div>
-                <strong>Dépassement checkout ×3</strong>
-                <span class="mock__badge mock__badge--today">Aujourd'hui</span>
+                <strong>Casse vaisselle + tapis taché</strong>
+                <span class="mock__badge mock__badge--today">Dans 2 j</span>
+                <div class="mock__meta">🏠 Bastille · ✉️ Rappel à venir</div>
               </div>
-              <span class="mock__amount">225,00 €</span>
+              <span class="mock__amount">180,00 €</span>
             </div>
             <div class="mock__item">
               <div>
-                <strong>Moquette tachée</strong>
+                <strong>Dépassement checkout ×2</strong>
                 <span class="mock__badge">Dans 6 j</span>
+                <div class="mock__meta">🏠 Vaugirard · ✉️ Rappel à venir</div>
               </div>
-              <span class="mock__amount">174,99 €</span>
+              <span class="mock__amount">90,00 €</span>
             </div>
           </div>
         </div>
@@ -151,6 +144,31 @@
             demande, au bon moment, sans donner l'impression de représailles envers le voyageur.
           </p>
         </div>
+      </div>
+
+      <div class="card timeline-card">
+        <h3>La fenêtre, visualisée</h3>
+        <div class="timeline__bar">
+          <span class="timeline__zone"></span>
+          <span class="timeline__dot timeline__dot--start"></span>
+          <span class="timeline__dot timeline__dot--warn"></span>
+          <span class="timeline__dot timeline__dot--danger"></span>
+        </div>
+        <div class="timeline__labels">
+          <div class="timeline__label">
+            <strong>Jour 0</strong>
+            <span>Départ du voyageur</span>
+          </div>
+          <div class="timeline__label">
+            <strong>Jour 14, 14h</strong>
+            <span>L'avis peut arriver</span>
+          </div>
+          <div class="timeline__label">
+            <strong>Jour 14, minuit</strong>
+            <span>Votre dernière limite</span>
+          </div>
+        </div>
+        <p class="timeline__caption">La zone rouge, c'est <strong>votre fenêtre</strong> pour agir sans risque de mauvais avis.</p>
       </div>
 
       <div class="callout">

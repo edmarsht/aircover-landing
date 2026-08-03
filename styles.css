@@ -163,7 +163,7 @@ h1 { font-size: clamp(32px, 5vw, 48px); }
 .hero__visual { display: flex; justify-content: center; }
 .mock {
   width: 100%;
-  max-width: 420px;
+  max-width: 460px;
   background: var(--gray-100);
   border: 1px solid var(--gray-200);
   border-radius: 20px;
@@ -179,6 +179,7 @@ h1 { font-size: clamp(32px, 5vw, 48px); }
 }
 .mock__title { font-weight: 800; font-size: 15px; }
 .mock__stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 14px; }
+.mock__stats--4 { grid-template-columns: repeat(2, 1fr); }
 .mock__stat {
   background: var(--white);
   border-radius: var(--radius-sm);
@@ -339,6 +340,79 @@ h1 { font-size: clamp(32px, 5vw, 48px); }
 }
 .step h3 { font-size: 16px; margin-bottom: 6px; }
 .step p { font-size: 14px; }
+
+/* Aperçu d'une fiche AirCover */
+.detail-mock {
+  margin-top: 44px;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+.detail-mock__alert {
+  background: #FFF6E5;
+  color: #8A5300;
+  border: 1px solid #F2D399;
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 0 18px;
+}
+.detail-mock__top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.detail-mock__top strong { font-size: 18px; }
+.detail-mock__grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+  .detail-mock__grid { grid-template-columns: 1.3fr 1fr; }
+}
+.detail-mock__label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--gray-500);
+  margin: 16px 0 6px;
+}
+.detail-mock__label:first-child { margin-top: 0; }
+.detail-mock__text { font-size: 14px; color: var(--gray-700); margin: 0; }
+.detail-mock__file {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  background: var(--gray-100);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+}
+.detail-mock__side {
+  background: var(--gray-100);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  align-self: start;
+}
+.detail-mock__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+  padding: 8px 0;
+  border-top: 1px solid var(--gray-200);
+}
+.detail-mock__row:first-child { border-top: none; padding-top: 0; }
+.detail-mock__row span { color: var(--gray-500); }
+.detail-mock__row strong { font-weight: 700; text-align: right; }
 
 /* Pricing */
 .free-card {

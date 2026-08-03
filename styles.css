@@ -1,6 +1,8 @@
 :root {
   --red: #FF385C;
   --red-dark: #E31C5F;
+  --green: #16A34A;
+  --green-dark: #15803D;
   --ink: #17171A;
   --gray-700: #484848;
   --gray-500: #767676;
@@ -236,7 +238,12 @@ h1 { font-size: clamp(32px, 5vw, 48px); }
   background: var(--gray-200);
   z-index: 1;
 }
-.schema__step--danger::before { background: var(--red); }
+.schema__step.schema__step--safe::before {
+  background: var(--green);
+  height: 6px;
+  top: 23px;
+  border-radius: 999px;
+}
 .schema__icon {
   position: relative;
   z-index: 2;
@@ -257,7 +264,7 @@ h1 { font-size: clamp(32px, 5vw, 48px); }
 .schema__label { font-size: 12px; color: var(--gray-500); line-height: 1.3; }
 .schema__zone {
   margin: 22px 0 0;
-  background: rgba(255,56,92,.08);
+  background: rgba(22,163,74,.08);
   color: var(--ink);
   font-weight: 600;
   font-size: 14px;
@@ -265,7 +272,7 @@ h1 { font-size: clamp(32px, 5vw, 48px); }
   padding: 12px 16px;
   border-radius: 10px;
 }
-.schema__zone strong { color: var(--red-dark); }
+.schema__zone strong { color: var(--green-dark); }
 
 /* Sections */
 .section { padding: 72px 0; }

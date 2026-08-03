@@ -127,12 +127,12 @@
 
       <div class="cards cards--2">
         <div class="card">
-          <div class="card__icon">⏳</div>
-          <h3>Le délai se ferme dès qu'un avis est laissé</h3>
+          <div class="card__icon">🔔</div>
+          <h3>Un outil de suivi et d'alerte</h3>
           <p>
-            Vous devez déposer votre demande <strong>avant</strong> que le voyageur ne puisse laisser
-            un commentaire public. Une fois l'avis publié, ou 14 jours après le départ au plus tard,
-            la porte se referme, sans exception.
+            AirCover Manager centralise le suivi de toutes vos demandes en cours et vous alerte
+            par SMS et par email au bon moment, pour que vous puissiez faire votre demande
+            directement auprès d'Airbnb, sans jamais la rater.
           </p>
         </div>
         <div class="card">
@@ -148,27 +148,24 @@
 
       <div class="card timeline-card">
         <h3>La fenêtre, visualisée</h3>
-        <div class="timeline__bar">
-          <span class="timeline__zone"></span>
-          <span class="timeline__dot timeline__dot--start"></span>
-          <span class="timeline__dot timeline__dot--warn"></span>
-          <span class="timeline__dot timeline__dot--danger"></span>
-        </div>
-        <div class="timeline__labels">
-          <div class="timeline__label">
+        <div class="schema">
+          <div class="schema__step">
+            <span class="schema__icon">🧳</span>
             <strong>Jour 0</strong>
-            <span>Départ du voyageur</span>
+            <span class="schema__label">Départ du voyageur</span>
           </div>
-          <div class="timeline__label">
+          <div class="schema__step">
+            <span class="schema__icon schema__icon--warn">💬</span>
             <strong>Jour 14, 14h</strong>
-            <span>L'avis peut arriver</span>
+            <span class="schema__label">L'avis peut arriver</span>
           </div>
-          <div class="timeline__label">
+          <div class="schema__step schema__step--danger">
+            <span class="schema__icon schema__icon--danger">🔒</span>
             <strong>Jour 14, minuit</strong>
-            <span>Votre dernière limite</span>
+            <span class="schema__label">Votre dernière limite</span>
           </div>
         </div>
-        <p class="timeline__caption">La zone rouge, c'est <strong>votre fenêtre</strong> pour agir sans risque de mauvais avis.</p>
+        <p class="schema__zone">La zone rouge, c'est <strong>votre fenêtre</strong> pour agir sans risque de mauvais avis.</p>
       </div>
 
       <div class="callout">

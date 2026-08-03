@@ -116,6 +116,20 @@ ul { margin: 0; padding: 0; list-style: none; }
   .nav__links { display: flex; }
 }
 
+.nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-shrink: 0;
+}
+.nav__login {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.nav__login:hover { color: var(--red); }
+
 /* Hero */
 .hero { padding: 64px 0 80px; }
 .hero__inner {

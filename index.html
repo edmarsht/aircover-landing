@@ -320,50 +320,21 @@
 </footer>
 
 <script>
-  /* ---------- Consentement cookies (RGPD/CNIL) ---------- */
+  /* ---------- Analytics ---------- */
+  /* Demande explicite du propriétaire du site : pas de bandeau de consentement,
+     chargement automatique, malgré l'avertissement sur la conformité RGPD/CNIL
+     pour ce site public à visiteurs anonymes (décision assumée, pas un oubli). */
   var GA_MEASUREMENT_ID = 'G-V0Z5JQ5CM3';
 
-  function loadAnalytics() {
-    if (document.getElementById('ga-script')) return;
-    var script = document.createElement('script');
-    script.id = 'ga-script';
-    script.async = true;
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_MEASUREMENT_ID;
-    document.head.appendChild(script);
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { window.dataLayer.push(arguments); }
-    window.gtag = gtag;
-    gtag('js', new Date());
-    gtag('config', GA_MEASUREMENT_ID);
-  }
-
-  function initCookieConsent() {
-    var consent = localStorage.getItem('cookieConsent');
-    if (consent === 'accepted') { loadAnalytics(); return; }
-    if (consent === 'declined') return;
-
-    var banner = document.createElement('div');
-    banner.className = 'cookie-banner';
-    banner.innerHTML =
-      '<p>Ce site utilise des cookies de mesure d\'audience (Google Analytics) pour comprendre son usage. Tu peux accepter ou refuser.</p>' +
-      '<div class="cookie-banner-actions">' +
-        '<button type="button" class="btn btn--ghost btn--sm" id="cookie-decline">Refuser</button>' +
-        '<button type="button" class="btn btn--primary btn--sm" id="cookie-accept">Accepter</button>' +
-      '</div>';
-    document.body.appendChild(banner);
-
-    document.getElementById('cookie-accept').addEventListener('click', function () {
-      localStorage.setItem('cookieConsent', 'accepted');
-      loadAnalytics();
-      banner.remove();
-    });
-    document.getElementById('cookie-decline').addEventListener('click', function () {
-      localStorage.setItem('cookieConsent', 'declined');
-      banner.remove();
-    });
-  }
-
-  initCookieConsent();
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_MEASUREMENT_ID;
+  document.head.appendChild(script);
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('js', new Date());
+  gtag('config', GA_MEASUREMENT_ID);
 </script>
 
 </body>
